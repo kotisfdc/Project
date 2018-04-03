@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Students</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+        <picklistValues>
+            <masterLabel>BIPC</masterLabel>
+            <translation><!-- BIPC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEC</masterLabel>
+            <translation><!-- CEC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MPC</masterLabel>
+            <translation><!-- MPC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percentage --></label>
+        <name>Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll Number --></label>
+        <name>RollNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject1 --></label>
+        <name>Subject1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject2 --></label>
+        <name>Subject2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject3 --></label>
+        <name>Subject3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject4 --></label>
+        <name>Subject4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject5 --></label>
+        <name>Subject5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Marks --></label>
+        <name>TotalMarks__c</name>
+    </fields>
+    <layouts>
+        <layout>Student Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

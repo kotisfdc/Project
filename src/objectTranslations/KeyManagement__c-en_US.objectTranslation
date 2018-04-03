@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>KeyManagement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>KeyManagement</value>
+    </caseValues>
+    <fields>
+        <label><!-- Apps --></label>
+        <name>Apps__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsActive --></label>
+        <name>IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Masterkey --></label>
+        <name>Masterkey__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserKey --></label>
+        <name>UserKey__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

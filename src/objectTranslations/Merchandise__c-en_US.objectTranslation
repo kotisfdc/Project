@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Merchandise</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Merchandise</value>
+    </caseValues>
+    <fields>
+        <label><!-- Discount_Type --></label>
+        <name>Discount_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discounted_Price --></label>
+        <name>Discounted_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original_Price --></label>
+        <name>Original_Price__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

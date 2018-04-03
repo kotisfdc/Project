@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <interviewLabel>AccountDelete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AccountDelete</label>
+    <processType>Flow</processType>
+    <recordDeletes>
+        <name>Accountdel</name>
+        <label>Account Delete</label>
+        <locationX>597</locationX>
+        <locationY>304</locationY>
+        <connector>
+            <targetReference>thank_u</targetReference>
+        </connector>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>varAccID</elementReference>
+            </value>
+        </filters>
+        <object>Account</object>
+    </recordDeletes>
+    <screens>
+        <name>Account_Delete</name>
+        <label>Account Delete</label>
+        <locationX>592</locationX>
+        <locationY>144</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Accountdel</targetReference>
+        </connector>
+        <fields>
+            <name>DeleteRecord</name>
+            <fieldText>You Deleting  Record  id -{!varAccID}</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <screens>
+        <name>thank_u</name>
+        <label>thank u</label>
+        <locationX>597</locationX>
+        <locationY>467</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>msg</name>
+            <fieldText>Record Deleted SuccessFully</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+    </screens>
+    <startElementReference>Account_Delete</startElementReference>
+    <variables>
+        <name>AccData</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>lstAccName</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>varAccID</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+</Flow>
